@@ -108,7 +108,7 @@ def get_pipeline_session(region, bucket_name):
         default_bucket=bucket_name,
     )
 
-def get_pipeline_custom_tags(new_tags, region, sagemaker_project_name=None):
+def _get_pipeline_custom_tags(new_tags, region, sagemaker_project_name=None):
     try:
         print(f"Getting project tags for {sagemaker_project_name}")
         
@@ -126,6 +126,10 @@ def get_pipeline_custom_tags(new_tags, region, sagemaker_project_name=None):
         print(f"Error getting project tags: {e}")
         
     return new_tags
+
+def get_pipeline_custom_tags(new_tags, region, sagemaker_project_name=None):
+    """Module-level function expected by _utils.py for custom tags."""
+    return _get_pipeline_custom_tags(new_tags, region, sagemaker_project_name)
     
 def get_pipeline(
     region,
