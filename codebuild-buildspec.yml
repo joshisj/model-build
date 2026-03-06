@@ -19,12 +19,12 @@ phases:
           --role-arn $SAGEMAKER_PIPELINE_ROLE_ARN \
           --tags "[{\"Key\":\"sagemaker:project-name\",\"Value\":\"${SAGEMAKER_PROJECT_NAME}\"}, {\"Key\":\"sagemaker:project-id\", \"Value\":\"${SAGEMAKER_PROJECT_ID}\"}]" \
           --kwargs "{ \
-                \"input_s3_url\":\"s3://sagemaker-us-west-2-583558296381/from-idea-to-prod/xgboost/input/bank-additional-full.csv\", \
+                \"input_s3_url\":\"s3://sagemaker-us-west-2-494060254856/from-idea-to-prod/xgboost/input/bank-additional-full.csv\", \
                 \"feature_group_name\":\"from-idea-to-prod-17-09-05-47\", \
                 \"model_package_group_name\":\"mlops-12-17-09-36-41-p-axctwyiytb2m\",\
                 \"pipeline_name_prefix\":\"from-idea-to-prod-pipeline-17-08-50-14\",\
                 \"role\":\"arn:aws:iam::583558296381:role/service-role/AmazonSageMaker-ExecutionRole-20201124T153725\",\
-                \"tracking_server_arn\":\"arn:aws:sagemaker:us-west-2:583558296381:mlflow-tracking-server/mlflow-d-jvvzeggri2oe-04-14-04-38\", \
+                \"tracking_server_arn\":\"arn:aws:sagemaker:us-west-2:494060254856:mlflow-tracking-server/mlflow-d-jvvzeggri2oe-04-14-04-38\", \
                 \"region\":\"${AWS_REGION}\", \
                 \"sagemaker_project_name\":\"${SAGEMAKER_PROJECT_NAME}\",\
                 \"sagemaker_project_id\":\"${SAGEMAKER_PROJECT_ID}\",\
