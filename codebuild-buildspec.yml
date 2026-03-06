@@ -1,4 +1,3 @@
-
 version: 0.2
 
 phases:
@@ -19,12 +18,11 @@ phases:
           --role-arn $SAGEMAKER_PIPELINE_ROLE_ARN \
           --tags "[{\"Key\":\"sagemaker:project-name\",\"Value\":\"${SAGEMAKER_PROJECT_NAME}\"}, {\"Key\":\"sagemaker:project-id\", \"Value\":\"${SAGEMAKER_PROJECT_ID}\"}]" \
           --kwargs "{ \
-                \"input_s3_url\":\"s3://sagemaker-us-west-2-494060254856/from-idea-to-prod/xgboost/input/bank-additional-full.csv\", \
-                \"feature_group_name\":\"from-idea-to-prod-17-09-05-47\", \
-                \"model_package_group_name\":\"mlops-12-17-09-36-41-p-axctwyiytb2m\",\
-                \"pipeline_name_prefix\":\"from-idea-to-prod-pipeline-17-08-50-14\",\
-                \"role\":\"${SAGEMAKER_PIPELINE_ROLE_ARN}\",\
-                \"tracking_server_arn\":\"arn:aws:sagemaker:us-west-2:494060254856:mlflow-tracking-server/mlflow-d-jvvzeggri2oe-04-14-04-38\", \
+                \"input_s3_url\":\"s3://sagemaker-us-east-1-494060254856/from-idea-to-prod/xgboost/input/bank-additional-full.csv\", \
+                \"model_package_group_name\":\"mlops-p-rtb4tpuq0sqf\",\
+                \"pipeline_name_prefix\":\"from-idea-to-prod-pipeline-05-17-26-01\",\
+                \"role\":\"arn:aws:iam::494060254856:role/cfnstudiodomain-SageMakerExecutionRole-j7LXu6oReFu8\",\
+                \"tracking_server_arn\":\"arn:aws:sagemaker:us-east-1:494060254856:mlflow-app/app-BKET65RWVTNX\", \
                 \"region\":\"${AWS_REGION}\", \
                 \"sagemaker_project_name\":\"${SAGEMAKER_PROJECT_NAME}\",\
                 \"sagemaker_project_id\":\"${SAGEMAKER_PROJECT_ID}\",\
