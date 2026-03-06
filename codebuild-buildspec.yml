@@ -23,7 +23,7 @@ phases:
                 \"feature_group_name\":\"from-idea-to-prod-17-09-05-47\", \
                 \"model_package_group_name\":\"mlops-12-17-09-36-41-p-axctwyiytb2m\",\
                 \"pipeline_name_prefix\":\"from-idea-to-prod-pipeline-17-08-50-14\",\
-                \"role\":\"arn:aws:iam::583558296381:role/service-role/AmazonSageMaker-ExecutionRole-20201124T153725\",\
+                \"role\":\"${SAGEMAKER_PIPELINE_ROLE_ARN}\",\
                 \"tracking_server_arn\":\"arn:aws:sagemaker:us-west-2:494060254856:mlflow-tracking-server/mlflow-d-jvvzeggri2oe-04-14-04-38\", \
                 \"region\":\"${AWS_REGION}\", \
                 \"sagemaker_project_name\":\"${SAGEMAKER_PROJECT_NAME}\",\
